@@ -29,6 +29,8 @@ class Alien(Sprite):
 		if self.rect.right >= screen_rect.right or self.rect.left <= 0:
 			return True
 
+	
+
 	def update(self):
 		"""Move Alien to the right or left."""
 		self.x += (self.settings.alien_speed * self.settings.fleet_direction)
